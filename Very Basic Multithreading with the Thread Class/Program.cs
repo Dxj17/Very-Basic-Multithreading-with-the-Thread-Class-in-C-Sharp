@@ -21,7 +21,9 @@ namespace Very_Basic_Multithreading_with_the_Thread_Class
             Thread myThread03 = new Thread(ThreadStartingPoint);
             myThread03.Start();       // .Net will spawn the thread and call ThreadStartingPoint()
         }
-
+        /// <summary>
+        /// Arbitrarily we will make this the starting point of our thread
+        /// </summary>
         private static void ThreadStartingPoint()
         {
             Console.WriteLine("I am your thread");
